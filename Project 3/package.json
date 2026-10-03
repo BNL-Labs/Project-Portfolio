@@ -1,0 +1,29 @@
+{
+  "name": "ticket-bot-v2-pl",
+  "version": "2.0.0",
+  "description": "Premium Discord power leveling order bot for Dofus.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node scripts/check.js"
+  },
+  "keywords": [
+    "discord",
+    "discordjs",
+    "dofus",
+    "power-leveling",
+    "ticket-bot"
+  ],
+  "author": "Codex",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.22.0",
+    "dotenv": "^16.4.5"
+  },
+  "overrides": {
+    "undici": "6.24.1"
+  }
+}

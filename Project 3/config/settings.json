@@ -1,0 +1,176 @@
+{
+  "branding": {
+    "botName": "LevelUP PL",
+    "accentColor": 16427439,
+    "successColor": 5763719,
+    "warningColor": 16763955,
+    "dangerColor": 15548997,
+    "footerText": "Premium Dofus power leveling service"
+  },
+  "roles": {
+    "staffRoleIds": [
+      ""
+    ],
+    "managerRoleIds": [
+      ""
+    ]
+  },
+  "channels": {
+    "panelChannelId": "",
+    "logsChannelId": "",
+    "feedbackChannelId": ""
+  },
+  "tickets": {
+    "categoryId": "",
+    "archiveCategoryId": "",
+    "orderPrefix": "pl-order",
+    "questionPrefix": "pl-support",
+    "issuePrefix": "pl-bug"
+  },
+  "payment": {
+    "supportManualFeeOverride": true,
+    "instructions": "Send the exact amount, then upload your transfer proof as an image inside the ticket.",
+    "cihToCih": {
+      "enabled": true,
+      "accountHolderName": "YOUR_ACCOUNT_HOLDER_NAME",
+      "shortAccountNumber": "YOUR_ACCOUNT_NUMBER",
+      "contact": "YOUR_CONTACT_DETAILS",
+      "note": "Use this option when the sender bank is CIH. This is the easiest internal transfer flow."
+    },
+    "otherBankToCih": {
+      "enabled": true,
+      "accountHolderName": "YOUR_ACCOUNT_HOLDER_NAME",
+      "bankName": "CIH BANK",
+      "fullRib": "YOUR_BANK_RIB",
+      "contact": "YOUR_CONTACT_DETAILS",
+      "note": "Use this option for transfers from any other Moroccan bank to your CIH account. Sender-bank fees may apply and must be added to the final bill."
+    },
+    "kamas": {
+      "enabled": true,
+      "instructions": "Thank you for choosing Kamas like and payment option. Please contact the staff to continue payment progress and make sure you have enough kamas in your inventory.",
+      "validationMode": "manual",
+      "referenceRate": "1M Kamas = 6 MAD"
+    },
+    "feeTable": {
+      "fallbackMad": 20,
+      "profiles": {
+        "cih_internal": {
+          "label": "CIH -> CIH",
+          "method": "CIH_TO_CIH",
+          "feeMad": 0,
+          "note": "Default internal CIH transfer fee."
+        },
+        "boa_digital": {
+          "label": "Bank of Africa -> CIH (digital)",
+          "method": "OTHER_BANK_TO_CIH",
+          "feeMad": 15,
+          "note": "Example default for BOA digital transfer. Confirm before going live."
+        },
+        "boa_branch": {
+          "label": "Bank of Africa -> CIH (branch)",
+          "method": "OTHER_BANK_TO_CIH",
+          "feeMad": 30,
+          "note": "Example default for BOA branch transfer. Confirm before going live."
+        },
+        "credit_du_maroc_instant": {
+          "label": "Credit du Maroc -> CIH (instant)",
+          "method": "OTHER_BANK_TO_CIH",
+          "feeMad": 16.5,
+          "note": "Example instant transfer fee TTC. Confirm before going live."
+        },
+        "other_unknown": {
+          "label": "Other / Unknown bank -> CIH",
+          "method": "OTHER_BANK_TO_CIH",
+          "feeMad": 17,
+          "note": "Fallback example only. Staff can override it per order."
+        }
+      }
+    }
+  },
+  "pricing": {
+    "currency": "MAD",
+    "servers": [
+      "Brial",
+      "Rafal",
+      "Salar"
+    ],
+    "packages": [
+      {
+        "key": "pl_1_100",
+        "title": "Level 1 -> 100",
+        "fromLevel": 1,
+        "toLevel": 100,
+        "priceMad": 36,
+        "etaHours": 6
+      },
+      {
+        "key": "pl_1_150",
+        "title": "Level 1 -> 150",
+        "fromLevel": 1,
+        "toLevel": 150,
+        "priceMad": 72,
+        "etaHours": 12
+      },
+      {
+        "key": "pl_1_199",
+        "title": "Level 1 -> 199",
+        "fromLevel": 1,
+        "toLevel": 199,
+        "priceMad": 102,
+        "etaHours": 36
+      },
+      {
+        "key": "pl_1_200",
+        "title": "Level 1 -> 200",
+        "fromLevel": 1,
+        "toLevel": 200,
+        "priceMad": 138,
+        "etaHours": 48
+      }
+    ],
+    "dynamic": {
+      "enabled": true,
+      "basePerLevelMad": 0.75,
+      "minimumPriceMad": 30,
+      "hoursPerLevel": 0.23,
+      "minimumEtaHours": 3,
+      "levelBands": [
+        {
+          "min": 1,
+          "max": 100,
+          "multiplier": 1
+        },
+        {
+          "min": 101,
+          "max": 150,
+          "multiplier": 1
+        },
+        {
+          "min": 151,
+          "max": 199,
+          "multiplier": 1
+        },
+        {
+          "min": 200,
+          "max": 200,
+          "multiplier": 1
+        }
+      ],
+      "serverMultipliers": {
+        "default": 1,
+        "Brial": 1,
+        "Rafal": 1.1,
+        "Salar": 1.1
+      }
+    },
+    "rush": {
+      "enabled": true,
+      "percentage": 25,
+      "flatFeeMad": 0,
+      "etaMultiplier": 0.45
+    }
+  },
+  "reviews": {
+    "minimumStarsForPublicPost": 4
+  }
+}

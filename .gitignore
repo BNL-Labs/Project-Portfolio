@@ -1,0 +1,31 @@
+# Secrets and local configuration
+**/.env
+**/.env.*
+!**/.env.example
+Project 1/config.json
+
+# Runtime data that may contain user information
+Project 1/orders.json
+Project 3/data/store.json
+Project 5/data/state.json
+Project 6/storage/*.json
+Project 6/storage/*.log
+
+# Installed dependencies and local environments
+**/node_modules/
+**/.venv/
+**/venv/
+
+# Generated and cached files
+**/__pycache__/
+**/*.py[cod]
+**/generated/
+**/banners/
+**/*.log
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+

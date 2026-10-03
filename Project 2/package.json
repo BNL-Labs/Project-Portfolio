@@ -1,0 +1,29 @@
+{
+  "name": "lx-concierge",
+  "version": "1.0.0",
+  "description": "LX Concierge, a premium Discord concierge system for the Luxenza luxury commerce server.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "register": "node scripts/register-commands.js"
+  },
+  "keywords": [
+    "discord",
+    "luxury",
+    "commerce",
+    "mongodb",
+    "discord.js"
+  ],
+  "author": "OpenAI Codex",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "dependencies": {
+    "dayjs": "1.11.20",
+    "discord.js": "^14.25.1",
+    "dotenv": "17.3.1",
+    "mongoose": "9.3.0"
+  }
+}

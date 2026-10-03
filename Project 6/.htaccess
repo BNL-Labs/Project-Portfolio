@@ -1,0 +1,52 @@
+RewriteEngine On
+
+# Redirect legacy public PHP URLs to canonical pretty routes
+RewriteCond %{THE_REQUEST} \s/+index\.php[\s?] [NC]
+RewriteRule ^index\.php$ / [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+services\.php[\s?] [NC]
+RewriteRule ^services\.php$ /services [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+store\.php[\s?] [NC]
+RewriteRule ^store\.php$ /packages [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+about\.php[\s?] [NC]
+RewriteRule ^about\.php$ /about [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+support\.php[\s?] [NC]
+RewriteRule ^support\.php$ /support [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+feedbacks\.php[\s?] [NC]
+RewriteRule ^feedbacks\.php$ /feedbacks [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+privacy\.php[\s?] [NC]
+RewriteRule ^privacy\.php$ /privacy [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+terms\.php[\s?] [NC]
+RewriteRule ^terms\.php$ /terms [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+checkout\.php[\s?] [NC]
+RewriteRule ^checkout\.php$ /checkout [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+my-orders\.php[\s?] [NC]
+RewriteRule ^my-orders\.php$ /my-orders [R=301,L]
+
+# Admin pretty routes
+RewriteRule ^dashboard/?$ admin/index.php [L]
+RewriteRule ^orders/?$ admin/orders.php [L]
+RewriteRule ^order/?$ admin/order.php [L]
+RewriteRule ^offers/?$ admin/offers.php [L]
+RewriteRule ^manage/?$ admin/offer-edit.php [L]
+RewriteRule ^feedback/?$ admin/feedback-control.php [L]
+RewriteRule ^login/?$ admin/login.php [L]
+
+# Public pretty routes
+RewriteRule ^services/?$ services.php [L]
+RewriteRule ^packages/?$ store.php [L]
+RewriteRule ^about/?$ about.php [L]
+RewriteRule ^support/?$ support.php [L]
+RewriteRule ^checkout/?$ checkout.php [L]
+RewriteRule ^feedbacks/?$ feedbacks.php [L]
+RewriteRule ^my-orders/?$ my-orders.php [L]
+RewriteRule ^terms/?$ terms.php [L]
+RewriteRule ^privacy/?$ privacy.php [L]

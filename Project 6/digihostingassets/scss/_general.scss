@@ -1,0 +1,144 @@
+//
+// general.scss
+//
+
+body {
+    font-family: $font-family-base;
+    color: $dark !important;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-secondary;
+    font-weight: 700;
+}
+
+.btn,
+.btn:focus,
+button,
+button:focus {
+    outline: none !important;
+}
+
+a {
+    text-decoration: none !important;
+    outline: none;
+}
+
+p{
+    line-height: 1.6;
+}
+
+.preloader {
+    background: $light;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+    }
+    .status {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    animation: rotation 1s infinite;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    }
+    
+    .status .shape {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+    }
+    .status {
+        .shape.shape-1 {
+            left: 0;
+            background-color: $info;
+          }
+          .shape.shape-2 {
+            right: 0;
+            background-color: $primary;
+          }
+          .shape.shape-3 {
+            bottom: 0;
+            background-color: $info;
+          }
+          .shape.shape-4 {
+            bottom: 0;
+            right: 0;
+            background-color: $primary;
+          }
+    }
+
+    .status {
+        .shape-1 {
+            animation: shape1 0.5s infinite alternate;
+  }
+  .shape-2 {
+    animation: shape2 0.5s infinite alternate;
+}
+.shape-3 {
+    animation: shape3 0.5s infinite alternate;
+}
+.shape-4 {
+    animation: shape4 0.5s infinite alternate;
+}
+    }
+ 
+    
+    @keyframes rotation {
+      from {
+            transform: rotate(0deg);
+      }
+      to {
+            transform: rotate(360deg);
+      }
+    }
+
+    @keyframes shape1 {
+      from {
+            transform: translate(0, 0);
+      }
+      to {
+            transform: translate(40px, 40px);
+      }
+    }
+
+    @keyframes shape2 {
+      from {
+            transform: translate(0, 0);
+      }
+      to {
+            transform: translate(-40px, 40px);
+      }
+    }
+
+    @keyframes shape3 {
+      from {
+            transform: translate(0, 0);
+      }
+      to {
+            transform: translate(40px, -40px);
+      }
+    }
+
+    @keyframes shape4 {
+      from {
+            transform: translate(0, 0);
+      }
+      to {
+            transform: translate(-40px, -40px);
+      }
+    }

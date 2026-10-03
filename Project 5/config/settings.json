@@ -1,0 +1,166 @@
+{
+  "branding": {
+    "brand_name": "LEVEL UP",
+    "welcome_title": "{username}, welcome to {guild}",
+    "goodbye_title": "Goodbye, {username}",
+    "footer_text": "LEVEL UP premium onboarding",
+    "accent_color": 13289727,
+    "success_color": 6227802,
+    "warning_color": 16760576,
+    "danger_color": 15417396,
+    "default_theme": "pastel_luxe",
+    "brand_logo_path": "assets/logo.png",
+    "background_paths": {
+      "neon": "",
+      "luxury": "",
+      "gaming": "",
+      "minimalist": "",
+      "dark_premium": "",
+      "pastel_luxe": ""
+    }
+  },
+  "channels": {
+    "welcome_channel_id": "",
+    "goodbye_channel_id": "",
+    "logs_channel_id": "",
+    "onboarding_channel_id": "",
+    "rules_channel_id": ""
+  },
+  "roles": {
+    "auto_role_id": "",
+    "verified_role_id": "",
+    "unverified_role_id": "",
+    "bot_role_id": ""
+  },
+  "features": {
+    "public_welcome_enabled": true,
+    "dm_guide_enabled": true,
+    "verification_enabled": true,
+    "role_selector_enabled": true,
+    "goodbye_enabled": true,
+    "boost_messages_enabled": true,
+    "member_count_milestones_enabled": true,
+    "anniversary_messages_enabled": true,
+    "returning_member_welcome_enabled": true
+  },
+  "messages": {
+    "public_welcome_description": "Your onboarding wizard is ready. Click the button below to move through setup one clean step at a time and unlock the full {guild} experience.",
+    "public_welcome_high_risk_note": "This account is still very new, so staff may perform a quick review before full access is granted.",
+    "dm_title": "Welcome to {guild}",
+    "dm_description": "Hi {username}, your onboarding wizard is ready. Review the essentials below, then return to the server and press Start Onboarding.",
+    "dm_rules_summary": [
+      "Respect all members and staff.",
+      "No scams, harassment, or disruptive behavior.",
+      "Use the right channels and follow community standards."
+    ],
+    "dm_useful_channels": [
+      "#rules",
+      "#announcements",
+      "#support"
+    ],
+    "dm_support_text": "Need help? Contact staff or open a support ticket.",
+    "goodbye_description": "{username} has left **{guild}** after spending **{time_in_server}** with us.",
+    "verification_success": "Verification complete. Your access has been upgraded and your onboarding panel is ready.",
+    "verification_reminder": "Please accept the rules to unlock the server.",
+    "returning_member_description": "Welcome back, {user}. Pick up where you left off and enjoy the server again."
+  },
+  "banner": {
+    "width": 1440,
+    "height": 540,
+    "show_member_count": true,
+    "show_join_badge": true,
+    "show_account_age": true,
+    "save_debug_copy": false
+  },
+  "anti_alt": {
+    "high_risk_account_age_days": 3,
+    "medium_risk_account_age_days": 14,
+    "warn_in_logs": true
+  },
+  "verification": {
+    "reminder_enabled": true,
+    "reminder_after_minutes": 20,
+    "max_reminders": 2
+  },
+  "milestones": {
+    "member_count_values": [
+      25,
+      50,
+      100,
+      250,
+      500,
+      1000
+    ]
+  },
+  "role_selectors": [
+    {
+      "key": "region",
+      "title": "Region",
+      "placeholder": "Choose your region",
+      "min_values": 0,
+      "max_values": 1,
+      "roles": [
+        {
+          "id": "",
+          "label": "France",
+          "emoji": "🇫🇷",
+          "description": "Updates for France"
+        },
+        {
+          "id": "",
+          "label": "Morocco",
+          "emoji": "🇲🇦",
+          "description": "Updates for Morocco"
+        },
+        {
+          "id": "",
+          "label": "España",
+          "emoji": "🇪🇸",
+          "description": "Updates for España"
+        }
+      ]
+    },
+    {
+      "key": "notifications",
+      "title": "Notifications",
+      "placeholder": "Choose your notifications",
+      "min_values": 0,
+      "max_values": 2,
+      "roles": [
+        {
+          "id": "",
+          "label": "Events",
+          "emoji": "🔔",
+          "description": "Event notifications"
+        },
+        {
+          "id": "",
+          "label": "Giveaways",
+          "emoji": "🎁",
+          "description": "Giveaway notifications"
+        }
+      ]
+    },
+    {
+      "key": "games",
+      "title": "Game Interests",
+      "placeholder": "Choose your interests",
+      "min_values": 0,
+      "max_values": 1,
+      "roles": [
+        {
+          "id": "",
+          "label": "PvP",
+          "emoji": "⚔",
+          "description": "PvP community"
+        },
+        {
+          "id": "",
+          "label": "PvE",
+          "emoji": "🛡️",
+          "description": "PvE community"
+        }
+      ]
+    }
+  ]
+}

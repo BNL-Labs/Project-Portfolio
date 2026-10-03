@@ -1,0 +1,49 @@
+//
+// footer.scss
+//
+
+
+.footer{
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  padding: 25px 0px;
+}
+
+.social-icon{
+  .icon{
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 16px;
+    color: $white; 
+  }
+}
+
+.bg-facebook{
+  background: #3a5998;
+}
+
+.bg-twitter{
+  background: #52abef;
+}
+
+.bg-google{
+  background: #de4d3b;
+}
+
+.bg-linkedin{
+  background: #0d79b7;
+}
+
+.bg-dribbble{
+  background: #ef4e8c;
+}
+
+.bg-wordpress{
+  background: #2e9cca;
+}

@@ -1,0 +1,30 @@
+/* Template Name: Domania
+   Author: Themesdesign
+   Version: 1.1.0
+   File Description: Main Css file of the template
+*/
+
+
+/****************************************\
+
+01.general
+02.helper
+03.components
+04.menu
+05.home
+06.contact
+07.footer
+08.responsive
+
+*****************************************/
+
+
+@import "variables";
+@import "general";
+@import "helper";
+@import "components";
+@import "menu";
+@import "home";
+@import "contact";
+@import "footer";
+@import "responsive";

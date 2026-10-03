@@ -1,0 +1,19 @@
+{
+  "name": "kamas-bot",
+  "version": "1.0.0",
+  "description": "Discord Kamas Order Bot Example",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "node deploy-commands.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.21.0",
+    "dotenv": "^16.6.1",
+    "fs": "^0.0.1-security"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

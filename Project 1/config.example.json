@@ -1,0 +1,7 @@
+{
+  "token": "YOUR_DISCORD_BOT_TOKEN",
+  "clientId": "YOUR_DISCORD_APPLICATION_ID",
+  "guildId": "YOUR_DISCORD_SERVER_ID",
+  "logChannelId": "YOUR_LOG_CHANNEL_ID"
+}
+

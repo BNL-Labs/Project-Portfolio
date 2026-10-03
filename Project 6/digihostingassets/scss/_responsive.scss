@@ -1,0 +1,40 @@
+//
+// responsive.scss
+//
+
+@media (min-width: 200px) and (max-width: 768px) {
+
+    .contain-box{
+        padding: 120px 0px 100px 0px;
+        height: auto;
+    }
+
+    .footer{
+        position: relative;
+        top: 0px;
+      }
+    
+    .home-title {
+        font-size: 38px;
+    }
+     
+    #countdown .count-down, #eventdown .count-down {
+    width: 40%;
+    }
+
+    .pull-none{
+    float: none !important;
+    text-align: center !important;
+    }
+
+    .home-btn {
+        top: 40px;
+    }
+    
+}
+
+@media  (max-width: 1024px) {
+    #countdown .count-down, #eventdown .count-down {
+    width: 40%;
+    }
+}

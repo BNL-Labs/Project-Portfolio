@@ -1,0 +1,101 @@
+  
+  //
+// components.scss
+//
+
+.bg-light{
+    background-color: $light !important;
+}
+
+.text-muted {
+    color: $muted !important;
+}
+
+.btn {
+    padding: 12px 26px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    &:focus{
+        box-shadow: none;
+    }
+}
+
+.btn-sm {
+    padding: 7px 14px;
+    font-size: 12px;
+}
+
+// Chackbox
+@each $color,
+$value in $colors {
+  .custom-checkbox-#{$color}, .custom-radio-#{$color}{
+    .custom-control-input{
+      &:checked~.custom-control-label:before{
+        background-color: $value;
+        border-color: $value;
+      }
+    }
+  }
+}
+
+@each $name,
+$value in $colors {
+
+    .bg-#{$name} {
+        background-color: #{$value} !important;
+    }
+
+    .bg-soft-#{$name} {
+        background-color: rgba(($value), 0.1) !important;
+    }
+    .text-#{$name} {
+        color: #{$value} !important;
+    }
+
+    .border-#{$name} {
+        color: #{$value} !important;
+    }
+
+
+    // Icons
+    .icon-dual-#{$name} {
+        color: $value;
+        fill: rgba($value, 0.2);
+    }
+
+    .btn-soft-#{$name} {
+        background-color: rgba(($value), 0.25) !important;
+        color: #{$value} !important;
+        &:hover, &:focus, &:active,
+        &.active, &.focus, &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled):active:focus,
+        .open > .dropdown-toggle.btn-primary {
+            background: darken($value, 4%);
+        }
+    }
+    
+    .btn-#{$name} {
+        background: #{$value} !important;
+        border-color: #{$value} !important;
+       
+        &:hover, &:focus, &:active,
+        &.active, &.focus, &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled):active:focus,
+        .open > .dropdown-toggle.btn-primary {
+            background: darken($value, 4%);
+            border-color: darken($value, 4%);
+        }
+    }
+
+    .btn-outline-#{$name} {
+        color: #{$value};
+        border-color: #{$value};
+        &:hover, &:focus, &:active,
+        &.active, &.focus, &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled):active:focus,
+        .open > .dropdown-toggle.btn-primary {
+            color: $white;
+            background: $value;
+            border-color:$value;
+    
+        }
+    }
+}
